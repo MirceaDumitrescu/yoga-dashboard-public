@@ -1,0 +1,291 @@
+@import '../../variables.scss';
+
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+
+  .profile-container__main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .profile-container__profile {
+    display: flex;
+    flex-direction: column;
+    .membership-view-info {
+      @include flex-row(space-between, center);
+      padding: $xl-font-size;
+      font-size: $xl-font-size;
+      .membership-info__sessions {
+        @include flex-row(center, center);
+        gap: $m-font-size;
+        border-bottom: 1px solid $secondary-color;
+      }
+    }
+    .add-to-class {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: $m-font-size;
+      padding: $m-font-size;
+      width: 100%;
+      .custom-date__info {
+        font-size: $xs-font-size;
+      }
+    }
+    .profile-details {
+      width: 100%;
+      padding: $m-font-size;
+      .view-input {
+        margin-bottom: $xl-font-size;
+        border-bottom: 1px solid rgb(229, 229, 229);
+        padding: $xs-font-size;
+        width: 100%;
+      }
+    }
+  }
+
+  .profile-container__side {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100%;
+    border-right: 1px solid #e5e5e5;
+    p {
+      font-size: $s-font-size;
+      color: $secondary-color;
+      margin-bottom: $xs-font-size;
+      padding: $xs-font-size;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      gap: $xs-font-size;
+
+      span:hover {
+        text-decoration: underline;
+      }
+    }
+
+    #profile-container__side--active {
+      color: $primary-color;
+    }
+  }
+}
+
+.profile-container__membership {
+  @include flex-column(center, center);
+  width: 50%;;
+  .membership-info {
+    @include flex-column(center, center);
+    width: 300px;
+    p {
+      font-size: $m-font-size;
+      color: $secondary-color;
+      margin-bottom: $xs-font-size;
+      padding: $xs-font-size;
+      display: flex;
+      align-items: center;
+      gap: $xs-font-size;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .membership-type {
+    @include flex-row(flex-start, center);
+    padding: $xxl-font-size;
+    text-align: center;
+    padding: $xl-font-size;
+    .membership-type__sessions,
+    .membership-type__cost {
+      min-width: 300px;
+      @include flex-row(flex-start, center);
+      padding: $xs-font-size;
+      input {
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid #e5e5e5;
+        padding: $xs-font-size;
+        margin: $xs-font-size;
+      }
+    }
+  }
+}
+
+.membership-field {
+  width: 100%;
+  padding: $xs-font-size;
+  border: 1px solid $tertiary-color;
+  border-radius: 5px;
+  font-size: $s-font-size;
+  color: $secondary-color;
+  margin: 5px auto;
+}
+
+// select {
+//   width: 100%;
+//   padding: $xs-font-size;
+//   border: 1px solid $tertiary-color ;
+//   border-radius: 5px;
+//   font-size: $s-font-size;
+//   color: $secondary-color;
+// }
+// .client-history {
+//   display: flex;
+//   align-items: center;
+//   gap: $xs-font-size;
+//   color: $primary-color;
+// }
+
+// .view-history {
+//   margin: 0;
+//   cursor: pointer;
+// }
+
+// .view-history:hover {
+//   text-decoration: underline;
+// }
+
+.profile-container__edit {
+  @include flex-row(center, center);
+  padding: $xl-font-size;
+  .input-field {
+    width: 100%;
+    padding: $xs-font-size;
+    border: 1px solid $tertiary-color;
+    border-radius: 5px;
+    font-size: $s-font-size;
+    color: $secondary-color;
+    margin: 5px auto;
+  }
+}
+
+.add-to-class__button {
+  width: 200px;
+  background-color: $addToClass-color;
+  border: none;
+  &:hover {
+    background-color: rgb(34, 160, 70);
+  }
+}
+
+// .entries-list {
+//   font-size: $s-font-size;
+//   color: $secondary-color;
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+//   gap: $xs-font-size;
+//   place-content: center;
+//   place-items: center;
+// }
+
+// .renewals-text {
+//   font-size: $s-font-size;
+//   color: $secondary-color;
+// }
+
+// .renewals-list {
+//   display: flex;
+//   flex-direction: column;
+//   align-items: baseline;
+//   padding: $m-font-size;
+// }
+
+// .head-title {
+//   font-size: $s-font-size;
+//   color: $secondary-color;
+//   font-weight: bold;
+//   padding-left: $m-font-size;
+//   padding-top: $m-font-size;
+// }
+
+.modal-header__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $xs-font-size;
+}
+
+.modal-header--active {
+  background-color: $active-color;
+  width: fit-content;
+  padding: 6px;
+  border-radius: 7px;
+  color: white;
+  font-weight: bold;
+  font-size: $s-font-size;
+}
+
+.modal-header--expired_sessions,
+.modal-header--expired_membership {
+  color: $danger-color;
+  font-size: $m-font-size;
+  text-align: center;
+  margin: $xs-font-size;
+}
+
+.sessions-input {
+  font-size: $l-font-size;
+  width: 100px;
+  text-align: center;
+  border: none;
+}
+
+// .membership-type-add {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: $xs-font-size;
+//   place-content: center;
+//   place-items: center;
+//   margin: 0 auto;
+// }
+
+// .membership-type-add-container {
+//   display: grid;
+//   grid-template-columns: 1fr 1fr;
+//   gap: $xs-font-size;
+// }
+
+// .hidden-current-sessions {
+//   position: absolute;
+//   color: $danger-color;
+//   font-size: $s-font-size;
+//   left: $xs-font-size;
+//   top: $xs-font-size;
+// }
+
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+  gap: $m-font-size;
+}
+
+.modal-avatar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: $m-font-size;
+  margin: 2rem;
+  max-width: 250px;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+
+.avatar-input {
+  width: 100%;
+  padding: $xs-font-size;
+  border: 1px solid $tertiary-color;
+  border-radius: 5px;
+  font-size: $s-font-size;
+  color: $secondary-color;
+  margin: 5px auto;
+}

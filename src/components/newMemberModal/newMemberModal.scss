@@ -1,0 +1,11 @@
+@import '../../variables.scss';
+
+.new-member-inputs, .membership-type-add{
+    input {
+        width: 100%;
+        padding: $m-font-size;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        margin-bottom: $m-font-size;
+    }
+}

@@ -1,0 +1,28 @@
+@mixin flex-row($justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: row;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+
+@mixin flex-column($justify-content: center, $align-items: center) {
+    display: flex;
+    flex-direction: column;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+
+$xs-font-size: 12px;
+$s-font-size: 14px;
+$m-font-size: 16px;
+$l-font-size: 18px;
+$xl-font-size: 20px;
+$xxl-font-size: 24px;
+
+
+$primary-color: #00a8ff;
+$secondary-color: #333;
+$tertiary-color: #ccc;
+$addToClass-color: #1aae6e;
+$active-color: #2bda5f;
+$danger-color: #ff0000;

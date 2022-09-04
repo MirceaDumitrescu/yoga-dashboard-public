@@ -1,0 +1,23 @@
+.logs-row-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000;
+}
+
+.logs-row-value {
+  display: flex;
+  font-size: 14px;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.logs-row-value > p {
+  width: 100px;
+  /* border: 1px solid red; */
+  padding: 5px;
+}
+
+.header-titles {
+  font-size: 14px;
+  font-weight: 800;
+}

@@ -1,0 +1,183 @@
+.class-list__container {
+    padding: 3rem;
+    max-width: 1400px;
+    border-radius: 15px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.class-list__title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.class-list__filters {
+    max-width: 1400px;
+    margin: 0 auto 1rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.remove-button-participant {
+    color: gray;
+}
+
+.class-list-container {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    gap: 1rem;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.class-container {
+    padding: 3rem;
+    border-radius: 5px;
+    border-bottom: 1px solid rgb(231, 229, 229);
+}
+
+.class-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.participant-list {
+    cursor: pointer;
+}
+
+.participant-list:hover {
+    text-decoration: underline;
+}
+
+.class-participant-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.class-participants-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding-top: 12px;
+    cursor: pointer;
+}
+
+.remove-participant {
+    color: rgb(218, 184, 184);
+}
+
+.remove-participant:hover {
+    color: red;
+}
+
+.class-date,
+.class-trainer,
+.class-hours {
+    background-color: rgb(227, 243, 247);
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+    text-align: center;
+}
+
+.remove-participant {
+    margin-right: 10px;
+}
+
+.class-info,
+.class-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.class-reservations,
+.class-cancelations,
+.class-participants,
+.class-archive {
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    border-radius: 5px;
+    padding: 5px;
+    width: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.class-archive {
+    background-color: rgb(255, 127, 127);
+    cursor: pointer;
+}
+
+.class-archive:hover {
+    background-color: rgb(218, 77, 77);
+}
+
+.trainer-select__container {
+    width: 250px;
+    margin-right: 10px;
+}
+
+.class-list__date--filter-buttons {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trainer-select__title,
+.class-select__title {
+    color: rgb(167, 167, 167);
+}
+
+.filter-buttons__date {
+    margin-right: 10px;
+    padding: 7px;
+    border-radius: 5px;
+    color: rgb(148, 148, 148);
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.filter-buttons--reset-date {
+    padding: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+}
+
+.active {
+    visibility: visible;
+}
+
+.filter-buttons--reset-date:hover {
+    color: rgb(177, 164, 164);
+    transition: all 0.2s ease-in-out;
+}
+
+.filter-buttons__apply {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 40px;
+    &:hover {
+        background-color: rgb(177, 164, 164);
+        transition: all 0.2s ease-in-out;
+    }
+}

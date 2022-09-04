@@ -1,0 +1,43 @@
+.search-dropdown {
+  position: absolute;
+  width: inherit;
+  min-height: 100px;
+  background: #fff;
+  z-index: 1;
+  top: 60px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search-result {
+  color: rgb(1, 85, 187);
+  cursor: pointer;
+}
+
+.search-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  border: 1px solid rgb(206, 206, 206);
+  border-radius: 5px;
+  padding: 1rem;
+  color: rgb(0, 123, 255);
+  outline: none;
+  width: 250px;
+}
+
+.search-input-field {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 16px;
+}
+
+@media screen and (max-width: 768px) {
+}
